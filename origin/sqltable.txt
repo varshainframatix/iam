@@ -3,70 +3,7 @@ Query OK, 0 rows affected (0.40 sec)
 
 mysql> show database;
 ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'database' at line 1
-mysql> show databases;
-+--------------------+
-| Database           |
-+--------------------+
-| information_schema |
-| employee           |
-| mysql              |
-| performance_schema |
-| sys                |
-| test               |
-+--------------------+
-git changes made
-ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'database' at line 1
-mysql> show databases;
-+--------------------+
-| Database           |
-+--------------------+
-| information_schema |
-| employee           |
-| mysql              |
-| performance_schema |
-| sys                |
-| test               |
-+--------------------+
-6 rows in set (0.00 sec)
 
-mysql> use employee;
-Database changed
-mysql> show tables;
-+--------------------+
-| Tables_in_employee |
-+--------------------+
-| employee           |
-+--------------------+
-1 row in set (0.00 sec)
-
-mysql> describe employee;
-+-------+--------------+------+-----+---------+-------+
-| Field | Type         | Null | Key | Default | Extra |
-+-------+--------------+------+-----+---------+-------+
-| empid | int(20)      | YES  |     | NULL    |       |
-| fname | varchar(50)  | YES  |     | NULL    |       |
-| lname | varchar(50)  | YES  |     | NULL    |       |
-| mi    | varchar(50)  | YES  |     | NULL    |       |
-| mail  | varchar(100) | YES  |     | NULL    |       |
-| phone | int(11)      | YES  |     | NULL    |       |
-| sal   | double       | YES  |     | NULL    |       |
-| ssn   | int(11)      | YES  |     | NULL    |       |
-| dob   | varchar(100) | YES  |     | NULL    |       |
-+-------+--------------+------+-----+---------+-------+
-9 rows in set (0.01 sec)
-
-mysql> insert into employee values(1234,'SriHarsha','Sandiparthi','S','sri.harsha@inframatix.com',347-502-8442,'20300',4561,'Nov-22-1991');
-Query OK, 1 row affected (0.13 sec)
-
-mysql>
-mysql> insert into employee values(449834,'vipul','kondam','v','vipul@inframatix.com',935-851-8518,'2325',1741,'Sep-09-1993');
-Query OK, 1 row affected (0.06 sec)
-
-mysql>
-mysql> insert into employee values(213244,'vikas','kondam','V','vikas@inframatix.com',234-235-346,'4255',42342, 'Sep-09-1993');
-Query OK, 1 row affected (0.12 sec)
-
-mysql>
 mysql> insert into employee values(2142425,'sowmya','gottumukkala','s','sowmya@inframatix.com',342-534-3458,'2342',2144,'Mar-25-1991');
 Query OK, 1 row affected (0.04 sec)
 
@@ -85,33 +22,4 @@ mysql> select * from employee;
 +---------+-----------+--------------+------+---------------------------+-------+-------+-------+-------------+
 5 rows in set (0.03 sec)
 
-mysql> delete from employee where empid='1234';
-Query OK, 1 row affected (0.09 sec)
-
-mysql> select * from employee;
-+---------+--------+--------------+------+-----------------------+-------+-------+-------+-------------+
-| empid   | fname  | lname        | mi   | mail                  | phone | sal   | ssn   | dob         |
-+---------+--------+--------------+------+-----------------------+-------+-------+-------+-------------+
-|  449834 | vipul  | kondam       | v    | vipul@inframatix.com  | -8434 |  2325 |  1741 | Sep-09-1993 |
-|  213244 | vikas  | kondam       | V    | vikas@inframatix.com  |  -347 |  4255 | 42342 | Sep-09-1993 |
-| 2142425 | sowmya | gottumukkala | s    | sowmya@inframatix.com | -3650 |  2342 |  2144 | Mar-25-1991 |
-| 1231243 | varsha | ramagiri     | v    | varsha@inframatix.com | -4096 | 25346 | 23425 | Apr-8-1994  |
-+---------+--------+--------------+------+-----------------------+-------+-------+-------+-------------+
-4 rows in set (0.00 sec)
-
-mysql> update employee
-    -> set fname="sowmi"
-    -> where empid="2142425";
-Query OK, 1 row affected (0.09 sec)
-Rows matched: 1  Changed: 1  Warnings: 0
-
-mysql> select * from employee;
-+---------+--------+--------------+------+-----------------------+-------+-------+-------+-------------+
-| empid   | fname  | lname        | mi   | mail                  | phone | sal   | ssn   | dob         |
-+---------+--------+--------------+------+-----------------------+-------+-------+-------+-------------+
-|  449834 | vipul  | kondam       | v    | vipul@inframatix.com  | -8434 |  2325 |  1741 | Sep-09-1993 |
-|  213244 | vikas  | kondam       | V    | vikas@inframatix.com  |  -347 |  4255 | 42342 | Sep-09-1993 |
-| 2142425 | sowmi  | gottumukkala | s    | sowmya@inframatix.com | -3650 |  2342 |  2144 | Mar-25-1991 |
-| 1231243 | varsha | ramagiri     | v    | varsha@inframatix.com | -4096 | 25346 | 23425 | Apr-8-1994  |
-+---------+--------+--------------+------+-----------------------+-------+-------+-------+-------------+
-4 rows in set (0.00 sec)
+this is the updated file kjdfhslf/l;laX,;/DMCS
